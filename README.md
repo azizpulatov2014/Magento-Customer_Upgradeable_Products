@@ -1,4 +1,4 @@
-Magento
+Magento Customer Product Upgrades
 =======
 
 Hi visitors. I am developing this custom module for Magento in purpose so customers could upgrade from Basic to PRO and Platinum version, or from Pro to Platinum, according their purchase items list.
