@@ -1,0 +1,12 @@
+    <config>
+        <modules>
+            <Namespace_Customer>
+                <active>true</active>
+                <codePool>local</codePool>
+            </Namespace_Customer>
+            <Namespace_Products>
+                <active>true</active>
+                <codePool>local</codePool>
+            </Namespace_Products>
+        </modules>
+    </config>

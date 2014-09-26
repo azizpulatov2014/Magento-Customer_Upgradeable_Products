@@ -1,0 +1,20 @@
+<layout version="0.1.0">
+     <default>
+          <reference name="content">
+          </reference>
+      </default>
+
+      <customer_account> <!-- This helps us to add additional menu to the bottom of left side navigation of customer account page-->
+        <reference name="customer_account_navigation">
+            <action method="addLink" translate="label" module="customer"><name>products</name><path>upgrade/index</path><label>My Upgrades</label></action>
+        </reference>
+     </customer_account>
+
+      <routeurfrontend_index_index>
+           <update handle="customer_account"/> <!-- we need this to display all customer account content within our module-->
+           <reference name="content">
+                <block type="Upgradeableproducts/Monblock"  name="Upgradeableproducts_Monblock"
+                          template="Upgradeableproducts/Products.phtml" />
+           </reference>
+      </routeurfrontend_index_index>
+</layout>
