@@ -1,12 +1,29 @@
-    <config>
-        <modules>
-            <Namespace_Customer>
-                <active>true</active>
-                <codePool>local</codePool>
-            </Namespace_Customer>
-            <Namespace_Products>
-                <active>true</active>
-                <codePool>local</codePool>
-            </Namespace_Products>
-        </modules>
-    </config>
+<?xml version="1.0"?>
+<!--
+
+/**
+ * All modules for Namespace.
+ *
+ * @category  Namespace
+ * @author    Name <name@email.com>
+ * @copyright 2014 Your Company
+ */
+
+-->
+<config>
+    <modules>
+        <!-- 
+            Not sure what this module is for. It was not included with the
+            repository, and so I could not test it's code. Therefore, I
+            disabled it.
+        -->
+        <!--<Namespace_Customer>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Namespace_Customer>-->
+        <Namespace_Upgradeableproducts>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Namespace_Upgradeableproducts>
+    </modules>
+</config>
