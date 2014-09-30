@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!--
+
+/**
+ * Your module description here.
+ *
+ * @note      Module name and nodes were changed to "upgradeableproducts" for consistency.
+ *
+ * @package   Namespace_Upgradeableproducts
+ * @author    Name <name@email.com>
+ * @copyright 2014 Your Company
+ */
+
+-->
+<config>
+    <modules>
+        <Namespace_Upgradeableproducts>
+            <version>1.0</version>
+        </Namespace_Upgradeableproducts>
+    </modules>
+    <frontend>
+        <routers>
+            <upgradeableproducts>
+                <use>standard</use>
+                <args>
+                    <module>Namespace_Upgradeableproducts</module>
+                    <frontName>upgrade</frontName>
+                </args>
+            </upgradeableproducts>
+        </routers>
+        <layout>
+            <updates>
+                <upgradeableproducts>
+                    <file>upgradeableproducts.xml</file>
+                </upgradeableproducts>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <upgradeableproducts>
+                <class>Namespace_Upgradeableproducts_Block</class>
+            </upgradeableproducts>
+        </blocks>
+        <helpers>
+            <upgradeableproducts>
+                <class>Namespace_Upgradeableproducts_Helper</class>
+            </upgradeableproducts>
+            <!-- We will extend the product helper to override visibility checks based on upgrade eligibility -->
+            <catalog>
+                <rewrite>
+                    <product>Namespace_Upgradeableproducts_Helper_Product</product>
+                </rewrite>
+            </catalog>
+        </helpers>
+    </global>
+</config>
