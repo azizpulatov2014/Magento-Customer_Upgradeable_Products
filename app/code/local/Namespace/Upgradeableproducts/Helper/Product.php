@@ -81,13 +81,15 @@ class Namespace_Upgradeableproducts_Helper_Product
         $candidates = array();
 
         // Verify that order item has an upgrade path
+        // Item SKU must exist as a top-level element of upgrade matrix
         if (array_key_exists($item->getSku(), $this->_upgradeMatrix)) {
             foreach ($this->_upgradeMatrix[$item->getSku()] as $upgradeSku) {
                 $product = Mage::getModel('catalog/product')->loadByAttribute('sku', $upgradeSku);
 
-                // Add product as candidate only if found
+                // Add product as candidate if actually found in catalog
                 if ($product->getId()) {
-                    $candidates[] = $product;
+                    // Store by product ID for quick scanning in isVisibleToCustomer method
+                    $candidates[$product->getId()] = $product;
                 }
             }
         }
@@ -104,10 +106,19 @@ class Namespace_Upgradeableproducts_Helper_Product
      */
     public function isVisibleToCustomer(Mage_Catalog_Model_Product $product)
     {
+        // We need to check customer order history to verify that 
+        // this product is a qualifying upgrade to the customer. 
+        // If it is, then we will return true to force visibility.
+        
+        // Check every order
         foreach ($this->getCustomerOrders() as $order) {
+            // For each order, inspect every item
             foreach ($order->getAllVisibleItems() as $item) {
-                // Consider product visible as long as upgrade candidates are found
-                if (count($this->getUpgradeCandidates($item))) {
+                // For each item, fetch all available upgrades
+                $candidates = $this->getUpgradeCandidates($item);
+                
+                // Consider requested product visible if found in upgrade candidates
+                if (array_key_exists($product->getId(), $candidates)) {
                     return true;
                 }
             }
