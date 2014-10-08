@@ -1,11 +1,14 @@
 Magento Customer Product Upgrades
 =======
 
-Hi visitors. I am developing this custom module for Magento in purpose so customers could upgrade from Basic to PRO and Platinum version, or from Pro to Platinum, according their purchase items list.
+This module allow you to hide some products that may be visible only to those customer who bought particular product type. 
 
-I have an issue with product hiding for customers of magento system and then i googled in order to find some ideas about that. Therefore i have found extension on github. But it is hard to understand for now and I am afraid it not exactly what i need(may be i'm wrong, not sure)
+There are some products in the store like Product BASIC, PRO and PLATINUM. And all of them has different prices, but if you have already purchased one of them, you can upgrade from BASIC to PRO or PLATINUM with cheaper prices.
 
-My customization (module): There are some products in the store like Product BASIC, PRO and PLATINUM. And all of them has different prices, but if you have already purchased one of them, you can upgrade from BASIC to PRO or PLATINUM with cheaper prices.
-I was able to create that, but here is issue that if i make hidden Category for frontend and put upgrade-able product inside it with visibility: Category only. In this case customer can see any upgrades available for him on his account page and then purchase it.
-Here is the problem: If customer who can see hidden product will copy link to the product and give it away, anyone can buy this product. I need to do something to prevent this case.
+It means that customers could upgrade from Basic to PRO and Platinum version, or from Pro to Platinum, according their purchase items list and those upgradeable products will be hidden for all, unless customer has appropriate purchase of the item. When someone who didn't purchase upgradeable item or not logged in will be redirected to "404 - page not found".
 
+Special thanks to Rick Buczynski, because he helped a lot in writing this module.
+
+It is free module and you can use it for your own purpose as new extension for your e-commerce.
+
+Aziz Pulatov.
