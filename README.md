@@ -7,7 +7,7 @@ There are some products in the store like Product BASIC, PRO and PLATINUM. And a
 
 It means that customers could upgrade from Basic to PRO and Platinum version, or from Pro to Platinum, according their purchase items list and those upgradeable products will be hidden for all, unless customer has appropriate purchase of the item. When someone who didn't purchase upgradeable item or not logged in will be redirected to "404 - page not found".
 
-Special thanks to Rick Buczynski, because he helped a lot in writing this module.
+Special thanks to Rick Buczynski: https://github.com/vbuck, because he helped a lot in writing this module.
 
 This is FREE module and you can use it for your own purpose as new extension for your e-commerce. Please keep Developer's contacts on it while using.
 
