@@ -5,10 +5,10 @@
  * Module frontend layout updates.
  *
  * @package   Namespace_Upgradeableproducts
- * @author    Name <name@email.com>
- * @copyright 2014 Your Company
+ * @author    Aziz Pulatov <aziz.pulatov@gmail.com>
+ * @copyright 2014 WaveMachine Labs Inc.
  */
-
+ 
 -->
 <layout version="0.1.0">
     <customer_account> <!-- This helps us to add additional menu to the bottom of left side navigation of customer account page-->
