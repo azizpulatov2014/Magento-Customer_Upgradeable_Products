@@ -9,6 +9,6 @@ It means that customers could upgrade from Basic to PRO and Platinum version, or
 
 Special thanks to Rick Buczynski, because he helped a lot in writing this module.
 
-It is free module and you can use it for your own purpose as new extension for your e-commerce.
+This is FREE module and you can use it for your own purpose as new extension for your e-commerce. Please keep Developer's contacts on it while using.
 
 Aziz Pulatov.
