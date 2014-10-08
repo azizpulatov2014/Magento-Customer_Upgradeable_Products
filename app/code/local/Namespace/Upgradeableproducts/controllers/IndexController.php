@@ -4,8 +4,8 @@
  * Upgradeable products controller.
  *
  * @package   Namespace_Upgradeableproducts
- * @author    Name <name@email.com>
- * @copyright 2014 Your Company
+ * @author    Aziz Pulatov <aziz.pulatov@gmail.com>
+ * @copyright 2014 WaveMachine Labs Inc.
  */
 
 class Namespace_Upgradeableproducts_IndexController 
